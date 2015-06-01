@@ -8,8 +8,8 @@
     "Font Awesome",
     "Nitrous.IO"
   ],
-  "website": "http://ruby2-rails4-bootstrap-heroku.herokuapp.com/",
-  "repository": "https://github.com/diowa/ruby2-rails4-bootstrap-heroku",
+  "website": "http://rails-in-action.herokuapp.com/",
+  "repository": "https://github.com/gregnorris/ruby2-rails4-bootstrap-heroku",
   "success_url": "/",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
@@ -17,7 +17,7 @@
   "env": {
     "NEW_RELIC_APP_NAME": {
       "description": "Sets the name of your application as it will appear on the New Relic dashboard.",
-      "value": "Rails Starter App"
+      "value": "rails-in-action"
     },
     "RAILS_ENV": "production",
     "RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR": {
@@ -32,7 +32,6 @@
   "addons": [
     "heroku-postgresql:hobby-dev",
     "papertrail",
-    "pgbackups:auto-month",
     "newrelic:stark"
   ]
 }
